@@ -59,4 +59,13 @@ section > img{
     height: 50%;
     margin-left: 20px
 }
+.log{
+    list-style: none;
+    color: white;
+    overflow: hidden;
+    transition: 0.20s ease-in all;
+}
+.log:hover{
+    color: yellow;
+}
 

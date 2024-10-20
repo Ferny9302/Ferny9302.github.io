@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #919191;
+}
+.container > .info > h2{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 60px;
+}
+.txt{
+    margin-bottom: 25px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+ .box{
+    width: 30%;
+    height: 45px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background-color: #919191;
+    margin-bottom: 10px;
+    
+}
+.container > .inputs{
+    margin-top: 60px;
+}
+div > ul{
+    margin-top: 9px;
+    margin-left: 150px;
+    list-style: none;
+}
+div > ul > li{
+    font-size: 20px;
+}
+.aqui{
+    cursor: pointer;
+}
+.btn{
+    width: 30%;
+    height: 45px;
+    margin-left: 40px;
+    margin-top: 23px;
+    background-color: #6A6868;
+    font-size: 20px;
+    color: white;
+}
