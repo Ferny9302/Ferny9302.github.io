@@ -46,4 +46,10 @@ div > ul > li{
     background-color: #6A6868;
     font-size: 20px;
     color: white;
+    cursor: pointer;
+    transition: 0.10s ease-in all;
+}
+.btn:hover{
+    color: #f4f4f4;
+    background-color: #7e7d7d;
 }
