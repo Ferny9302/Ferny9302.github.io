@@ -5,20 +5,28 @@
 body{
     background-color: #919191;
 }
+.container{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+
+}
 .container > .info > h2{
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 17%;
     font-size: 60px;
 }
 .txt{
-    margin-bottom: 25px;
-    margin-left: 40px;
-    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    font-size: 30px;
+    font-weight: 100;
 }
  .box{
-    width: 30%;
+    width: 65%;
     height: 45px;
-    margin-left: 40px;
+    margin-left: 15%;
     border-radius: 10px;
     background-color: #919191;
     margin-bottom: 10px;
@@ -29,7 +37,7 @@ body{
 }
 div > ul{
     margin-top: 9px;
-    margin-left: 150px;
+    margin-left: 13rem;
     list-style: none;
 }
 div > ul > li{
@@ -39,10 +47,10 @@ div > ul > li{
     cursor: pointer;
 }
 .btn{
-    width: 30%;
+    width: 66%;
     height: 45px;
-    margin-left: 40px;
-    margin-top: 23px;
+    margin-left: 15%;
+    margin-top: 50px;
     background-color: #6A6868;
     font-size: 20px;
     color: white;
@@ -53,3 +61,5 @@ div > ul > li{
     color: #f4f4f4;
     background-color: #7e7d7d;
 }
+
+
