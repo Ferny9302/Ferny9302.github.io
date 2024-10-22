@@ -9,8 +9,9 @@ header{
     padding-left: 3%;
     padding-right: 10%;
     padding-top: 5px;
+    
 }
-header > div > input{
+header > div > div >input{
     height: 30px;
     margin-top: 10px;
     margin-left: 9px;
@@ -24,8 +25,8 @@ header > div > ul{
     justify-content: right;
 }
 header > div > ul > li {
-    margin-right: 40px;
-    margin-left: 0;
+    margin-top: 17px;
+    margin-right: 50px;
     list-style: none;
     color: white;
     cursor: pointer;
@@ -35,6 +36,7 @@ header > div > ul > li:hover{
     color: yellow;
 }
 header > div > ul > i{
+    margin-top: 17px;
     color: white;
     margin-right: 10px;
     margin-left: 0;
@@ -43,21 +45,13 @@ h2{
     margin-left: 4rem;
     color: rgb(234, 175, 13);
 }
-header > div > i{
+header > div > div >i{
     color: white;
     transition: 0.20s ease-in all;
 }
 header > div > i:hover{
     color: yellow;
     cursor: pointer;
-}
-section{
-    padding-top:10px;
-}
-section > img{
-    width: 5%;
-    height: 50%;
-    margin-left: 20px
 }
 .log{
     list-style: none;
@@ -68,4 +62,13 @@ section > img{
 .log:hover{
     color: yellow;
 }
+.mitad{
+    float: left;
+    width: 50%;
+}
+.mitad2{
+    float: left;
+    width: 40%;
+}
+
 

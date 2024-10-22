@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: #919191;
+    background-color: white;
 }
 .container{
     width: 50%;
-    height: 100%;
     float: left;
+    height: 100vh;
     
 
 }
@@ -28,7 +28,7 @@ body{
     height: 45px;
     margin-left: 15%;
     border-radius: 10px;
-    background-color: #919191;
+    background-color: white;
     margin-bottom: 10px;
     
 }
@@ -37,7 +37,7 @@ body{
 }
 div > ul{
     margin-top: 9px;
-    margin-left: 13rem;
+    margin-left: 14rem;
     list-style: none;
 }
 div > ul > li{
@@ -60,6 +60,17 @@ div > ul > li{
 .btn:hover{
     color: #f4f4f4;
     background-color: #7e7d7d;
+}
+.mitad2{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+}
+.mitad2 > img{
+    width: 100%;
+    height: 100%;
+    
 }
 
 

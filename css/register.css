@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mitad{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+}
+.mitad > img{
+    width: 100%;
+    height: 100%;
+}
+.mitad2{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+}
+.mitad2 > div >h2{
+    margin-left: 23%;
+    margin-top: 35px;
+    font-size: 40px;
+}
+.mitad2 > .txt1{
+    display: flex;
+}
+.mitad2 > .txt1 >h3{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.mitad2 > .txt1 >h4{
+    margin-top: 50px;
+    margin-left: 12.6rem;
+    font-size: 20px;
+}
+.box{
+    height: 35px;
+    width: 28%;
+    border-radius: 12px;
+    margin-left: 67px;
+}
+.box1{
+    height: 35px;
+    width: 28%;
+    border-radius: 12px;
+    margin-left: 83px;
+}
+.txt2{
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+.box2{
+    height: 35px;
+    width: 71.2%;
+    border-radius: 12px;
+    margin-left: 67px;
+}
+.btn{
+    height: 40px;
+    width: 71.7%;
+    margin-top: 50px;
+    margin-left: 67px;
+    border-radius: 12px;
+    background-color: rgb(15, 244, 15);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(61, 255, 61);
+}
