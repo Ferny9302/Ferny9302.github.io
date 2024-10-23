@@ -14,19 +14,19 @@ body{
 }
 .container > .info > h2{
     margin-top: 100px;
-    margin-left: 17%;
+    margin-left: 25%;
     font-size: 60px;
 }
 .txt{
     margin-bottom: 30px;
-    margin-left: 15%;
+    margin-left: 18%;
     font-size: 30px;
     font-weight: 100;
 }
  .box{
     width: 65%;
     height: 45px;
-    margin-left: 15%;
+    margin-left: 18%;
     border-radius: 10px;
     background-color: white;
     margin-bottom: 10px;
@@ -36,8 +36,9 @@ body{
     margin-top: 60px;
 }
 div > ul{
-    margin-top: 9px;
-    margin-left: 14rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
     list-style: none;
 }
 div > ul > li{
@@ -47,10 +48,9 @@ div > ul > li{
     cursor: pointer;
 }
 .btn{
-    width: 66%;
     height: 45px;
-    margin-left: 15%;
-    margin-top: 50px;
+    margin-left: 35%;
+    margin-top: 40px;
     background-color: #6A6868;
     font-size: 20px;
     color: white;
