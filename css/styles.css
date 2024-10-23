@@ -72,5 +72,12 @@ header > div > i:hover{
     float: left;
     width: 40%;
 }
+.product{
+    
+    gap: 20px;
+}
+.product > .control{
+    width: 10px;
+} 
 
 
