@@ -31,13 +31,14 @@ header > div > ul > li {
     list-style: none;
     color: white;
     cursor: pointer;
+    display: flex;
     transition: 0.20s ease-in all;
 }
 header > div > ul > li:hover{
     color: yellow;
 }
-header > div > ul > i{
-    margin-top: 15px;
+header > div > ul > li >i{
+    margin-top: 3px;
     color: white;
     margin-right: 10px;
     margin-left: 0;
@@ -87,7 +88,7 @@ header > div > i:hover{
 .products{
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 5px;
     flex-wrap: wrap;
     margin-top: 50px;
     margin-left: 50px;
@@ -97,6 +98,7 @@ header > div > i:hover{
     height: 350px;
     background-color: white;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .products > .product-item2{
@@ -105,6 +107,7 @@ header > div > i:hover{
     background-color: white;
     justify-content: center;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .products > .product-item >img{
@@ -135,9 +138,9 @@ header > div > i:hover{
 .products1{
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 5px;
     flex-wrap: wrap;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-left: 50px;
 }
 .products1 > .product-item{
@@ -145,6 +148,7 @@ header > div > i:hover{
     height: 350px;
     background-color: white;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .products1 > .product-item >img{
@@ -159,6 +163,31 @@ header > div > i:hover{
     font-size: 20px;
     text-align: center;
 }
+.bajo{
+    margin-top: 10%;
+    margin-left: 5%;
+    display: flex;
+}
+.bajo > .info > h3{
+    font-size: 30px;
+    color: white;
+}
+.bajo > .info > h4{
+    font-size: 20px;
+    color: #989797;
+}
+.info1{
+    margin-left: 10%;
+}
+.bajo > .info1 > h3{
+    font-size: 30px;
+    color: white;
+}
+.bajo > .info1 > h4{
+    font-size: 20px;
+    color: #989797;
+}
+
 
 
 
