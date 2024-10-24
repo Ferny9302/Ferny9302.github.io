@@ -46,6 +46,8 @@ div > ul > li{
 }
 .aqui{
     cursor: pointer;
+    text-decoration: none;
+   
 }
 .btn{
     height: 45px;
