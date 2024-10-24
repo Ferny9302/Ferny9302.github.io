@@ -95,13 +95,13 @@ header > div > i:hover{
     margin-left: 50px;
 }
 .products > .product-item{
-    width: 18%;
+    width: 15%;
     height: 350px;
     background-color: white;
     border-color: aqua;
 }
 .products > .product-item2{
-    width: 18%;
+    width: 15%;
     height: 350px;
     background-color: white;
     justify-content: center;
@@ -111,10 +111,54 @@ header > div > i:hover{
     height: 80%;
 }
 .products > .product-item2 >img{
-    width: 85%;
-    height: 80%;
+    width: 86%;
+    height: 74%;
     margin-left: 7.5%;
 }
+.products > .product-item > h5{
+    font-size: 19px;
+    text-align: center;
+}
+.products > .product-item > .price-conateiner{
+    font-size: 20px;
+    text-align: center;
+}
+.products > .product-item2 > h5{
+    font-size: 19px;
+    text-align: center;
+}
+.products > .product-item2 > .price-conateiner{
+    font-size: 20px;
+    text-align: center;
+}
+.products1{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    margin-left: 50px;
+}
+.products1 > .product-item{
+    width: 15%;
+    height: 350px;
+    background-color: white;
+    border: aqua;
+}
+.products1 > .product-item >img{
+    width: 100%;
+    height: 80%;
+}
+.products1 > .product-item > h5{
+    font-size: 19px;
+    text-align: center;
+}
+.products1 > .product-item > .price-conateiner{
+    font-size: 20px;
+    text-align: center;
+}
+
+
 
 
 
