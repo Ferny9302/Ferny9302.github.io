@@ -1,0 +1,18 @@
+@media (max-width:425px){
+    .mitad2 > div >h2 {
+        margin-left: 23%;
+        font-size: 31px;
+    }
+    .mitad{
+        display: none;
+    }
+    .mitad2{
+        width: 100%;
+    }
+    .mitad2 > .txt1 > h4{
+        margin-left: 6.5rem;
+    }
+    .box1{
+        margin-left: 45px;
+    }
+}
