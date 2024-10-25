@@ -5,6 +5,9 @@
 body{
     background-color: white;
 }
+.logo{
+    display: none;
+}
 .container{
     width: 50%;
     float: left;
