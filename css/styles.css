@@ -163,6 +163,26 @@ header > div > i:hover{
     font-size: 20px;
     text-align: center;
 }
+.products1 > .product-item2{
+    width: 15%;
+    height: 350px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.products1 > .product-item2 >img{
+    width: 100%;
+    height: 80%;
+}
+.products1 > .product-item2 > h5{
+    font-size: 19px;
+    text-align: center;
+}
+.products1 > .product-item2 > .price-conateiner{
+    font-size: 20px;
+    text-align: center;
+}
 .bajo{
     margin-top: 10%;
     margin-left: 5%;
