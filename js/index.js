@@ -23,9 +23,9 @@ new Chart(ctx, {
 const ctx1 = document.getElementById('chartCategorias');
 
   new Chart(ctx1, {
-    type: 'line',
+    type: 'pie',
     data: {
-      labels: ['Desayuños', 'Comida', 'Cenas', 'Snacks'],
+      labels: ['control o', 'control e', 'control b', 'control g'],
       datasets: [{
         label: '# of Votes',
         data: [12, 19, 3, 2],
