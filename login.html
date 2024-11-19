@@ -7,6 +7,7 @@
     <title>Log in</title>
     <link rel="stylesheet" href="./css/log.css">
     <link rel="stylesheet" href="./css/media_querylog.css">
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
 </head>
 
 <body>
@@ -17,18 +18,18 @@
         </div>
         <div class="inputs">
             <h3 class="txt">Email</h3>
-            <input type="text" class="box" placeholder=" Ingresa tu email"><i class="fa-regular fa-user"></i>
+            <input type="text" class="box" id="user" placeholder=" Ingresa tu email" required><i class="fa-regular fa-user"></i>
         </div>
         <div class="contra">
             <h4 class="txt">Password</h4>
-            <input type="password" class="box" placeholder=" Ingresa tu contraseña" > <i class="fa-solid fa-lock"></i>
+            <input type="password" class="box" id="pass" placeholder=" Ingresa tu contraseña" required> <i class="fa-solid fa-lock"></i>
         </div>
         <div class="btn1">
-            <button class="btn" style="width: 30%;" onclick="cambio_login()">
+            <button class="btn" style="width: 30%;" id="login-btn">
                 Log in 
             </button>
         </div>
-        <div>
+        <div> 
             <ul>
                 <li>
                     <a href="./register.html" class="aqui">Register here</a>
@@ -39,9 +40,11 @@
     <div class="mitad2">
         <img src="./img/control.jpg" alt="">
     </div>
-    <script src="./js/script.js">
     
-    </script>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/val.js"></script>
+    
     
     
 </body>

@@ -23,7 +23,7 @@ new Chart(ctx, {
 const ctx1 = document.getElementById('chartCategorias');
 
   new Chart(ctx1, {
-    type: 'pie',
+    type: 'line',
     data: {
       labels: ['Desayuños', 'Comida', 'Cenas', 'Snacks'],
       datasets: [{
