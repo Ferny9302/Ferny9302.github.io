@@ -25,10 +25,10 @@ const ctx1 = document.getElementById('chartCategorias');
   new Chart(ctx1, {
     type: 'pie',
     data: {
-      labels: ['control o', 'control e', 'control b', 'control g'],
+      labels: ['control original', 'control especial', 'control bt', 'control gen'],
       datasets: [{
         label: '# of Votes',
-        data: [12, 19, 3, 2],
+        data: [12, 19, 1, 5],
         borderWidth: 1
       }]
     },

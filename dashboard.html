@@ -16,16 +16,22 @@
     <!--sidebbar-->
     <aside class="bg-dark text-white vh-100" style="width: 20%;">
       <h2 class="p-4 h4">
-        <img width="50px" src="./img/Fondo register.svg" alt="" class="mx-1">
+        <img width="50px" src="" alt="" class="mx-1">
         Control
       </h2>
       <ul class="nav flex-column">
         <li class="nav-item h5 mx-2"><a href="./control.html" class="nav-link text-white"><i
               class="bi bi-house mx-2"></i>Home</a></li>
         <li class="nav-item h5 mx-2"><a href="./dashboard.html" class="nav-link text-white"><i 
-                class="bi bi-box-seam mx-2"></i>Stock</a></li>
+                class="bi bi-cash mx-2"></i>Sales</a></li>
         <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i
-              class="bi bi-people mx-2"></i>User</a></li>    
+              class="bi bi-people mx-2"></i>User</a></li> 
+        <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i
+              class="bi bi-bag mx-2"></i>Shopping</a></li> 
+         <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i
+            class="bi bi-credit-card mx-2"></i>Payment</a></li>
+            <li class="nav-item h5 mx-2"><a href="./purchase.html" class="nav-link text-white"><i
+              class="bi bi-cart mx-2"></i>Purchase</a></li>     
               
               
       </ul>
@@ -80,40 +86,56 @@
       <!--end hedear-->
       <!--Title section-->
       <div class="mx-4 d-flex justify-content-between">
-        <h1 class="h4">Inventario</h1>
+        <h1 class="h4">Ventas</h1>
         <div>
           <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdd">Agregar</button>
         </div>
       </div>
       <!--end Title section-->
-      <div class="card mb-3 mx-2 d-flex" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./img2/Control1.svg" class="py-4 my-4 mx-2" alt="">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Total de controles : 10</h5>
-              <p class="card-text">Control gamecube original de color morado, capaz de conectarse en diferentes consolas de videojuegos sin detalles</p>
-              <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+      <section class="p-4 container">
+        <div class="row">
+            <div class="col-3 mt-2 p-2">
+                <div class="card">
+                    <img src="./img2/Control1.svg" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Control original</h5>
+                      <p class="card-text">Controles originales de gamecube, aptos para diversas consolas de videojuegos y durables</p>
+                      <a href="#" class="btn btn-dark w-100">Ver control</a>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 mx-2 d-flex" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./img2/Control2.svg" class="py-4 my-4 mx-4" alt="">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Total de controles : 10</h5>
-              <p class="card-text">Control gamecube original de color morado, capaz de conectarse en diferentes consolas de videojuegos sin detalles</p>
-              <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos</small></p>
+            <div class="col-3 mt-2 p-2">
+                <div class="card">
+                    <img src="./img2/control6.svg" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Control especial</h5>
+                      <p class="card-text">Controles de ediciones especiales, aptos para jugadores profesionales y excelente estado</p>
+                      <a href="#" class="btn btn-dark w-100">Ver control</a>
+                    </div>
+                  </div>
             </div>
-          </div>
+            <div class="col-3 mt-2 p-2">
+                <div class="card">
+                    <img src="./img2/control9.svg" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Control bluetooth</h5>
+                      <p class="card-text">Contoles bluetooth, con cable de carga y optimos para diversas consolas de videojuegos</p>
+                      <a href="#" class="btn btn-dark w-100">Ver control</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 mt-2 p-2">
+                <div class="card">
+                    <img src="./img2/control16.svg" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Control generico</h5>
+                      <p class="card-text">Control generico, mas baratos y funcionales con garantia de 3 meses, funcionan en diferentes consolas</p>
+                      <a href="#" class="btn btn-dark w-100">Ver control</a>
+                    </div>
+                  </div>
+            </div>
         </div>
-      </div>
+      </section>
     </main>
   </div>
 
