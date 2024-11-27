@@ -1,3 +1,9 @@
+<?php  
+  include "./php/conexion.php";
+  $sql="select * from users order by id DESC";
+  $res = $conexion->query($sql) or die ($conexion->error);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +33,9 @@
         <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i
               class="bi bi-people mx-2"></i>Usuario</a></li>
         <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i
-            class="bi bi-box mx-2"></i>Pedidos</a></li> 
+            class="bi bi-box mx-2"></i>Pedidos</a></li>
+        <li class="nav-item h5 mx-2"><a href="./proveedor.html" class="nav-link text-white"><i
+        class="bi bi-boxes mx-2"></i>Proveedores</a></li>   
          <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i
             class="bi bi-boxes mx-2"></i>Inventario</a></li>            
       </ul>
@@ -94,33 +102,44 @@
             <tr>
               <th scope="col">ID</th>
               <th scope="col">NOMBRE</th>
-              <th scope="col">APELLIDOS</th>
-              <th scope="col">EDAD</th>
+              <th scope="col">APELLIDO</th>
               <th scope="col">EMAIL</th>
               <th scope="col">CONTRASEÑA</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Joaquin</td>
-              <td>Lopez Doriga</td>
-              <td>77</td>
-              <td>lopezdoriga69@hotmail.com</td>
-              <td>***************</td>
-              <td class="text-end">
-                <button class="btn btn-outline-danger btn-sm">
-                  <i class="bi bi-trash2"></i>
-                </button>
-                <button class="btn btn-outline-warning btn-sm mx-2">
-                  <i class="bi bi-pen"></i>
-                </button>
-                <button class="btn btn-outline-dark btn-sm">
-                  <i class="bi bi-eye"></i>
-                </button>
-              </td>
-            </tr>
+            <?php 
+              while($fila=mysqli_fetch_array($res)){
+
+              
+            ?>
+                  <tr>
+                    <td><?php echo $fila['id'] ?></td>
+                    <td><?php echo $fila['nombre'] ?></td>
+                    <td><?php echo $fila['ap'] ?></td>
+                    <td><?php echo $fila['email'] ?></td>
+                    <td>***************</td>
+                    <td class="text-center"><?php  
+                      if($fila['level'] == 1){
+                        echo "<span class='rounded bg-success text-white p-1'>Administrador </span>";
+                      }else{
+                        echo "<span class='rounded bg-dark text-white p-1'>Ciente</span>";
+                      }
+                    ?></td>
+                    <td class="text-end">
+                      <button class="btn btn-outline-danger btn-sm">
+                        <i class="bi bi-trash2"></i>
+                      </button>
+                      <button class="btn btn-outline-warning btn-sm mx-2">
+                        <i class="bi bi-pen"></i>
+                      </button>
+                      <button class="btn btn-outline-dark btn-sm">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+            <?php } ?>
           </tbody>
         </table>
       </section>

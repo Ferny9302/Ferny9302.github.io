@@ -28,6 +28,7 @@ if(isset($_SESSION['userdata'])){
              <!-- <li class="nav-item h5 mx-2"><a href="./dashboard.html" class="nav-link text-white"><i class="bi bi-cash mx-2"></i>Sales</a></li>-->
               <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i class="bi bi-people mx-2"></i>Usuario</a></li>
               <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i class="bi bi-box mx-2"></i>Pedidos</a></li>
+              <li class="nav-item h5 mx-2"><a href="./proveedor.html" class="nav-link text-white"><i class="bi bi-box mx-2"></i>Proveedores</a></li>
               <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i class="bi bi-boxes mx-2"></i>Inventario</a></li>
               
             </ul>
