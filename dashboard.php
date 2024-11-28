@@ -1,5 +1,5 @@
 
-<!--sidebbar <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -21,18 +21,17 @@
         Control
       </h2>
       <ul class="nav flex-column">
-        <li class="nav-item h5 mx-2"><a href="./control.html" class="nav-link text-white"><i
-              class="bi bi-house mx-2"></i>Home</a></li>
-        <li class="nav-item h5 mx-2"><a href="./dashboard.html" class="nav-link text-white"><i 
-                class="bi bi-cash mx-2"></i>Sales</a></li>
-        <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i
-              class="bi bi-people mx-2"></i>User</a></li> 
-        <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i
-              class="bi bi-bag mx-2"></i>Shopping</a></li> 
-         <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i
-            class="bi bi-credit-card mx-2"></i>Payment</a></li>
-            <li class="nav-item h5 mx-2"><a href="./purchase.html" class="nav-link text-white"><i
-              class="bi bi-cart mx-2"></i>Purchase</a></li>     
+        <li class="nav-item h5 mx-2"><a href="./control.php" class="nav-link text-white"><i
+              class="bi bi-house mx-2"></i>Inicio</a></li>
+        <li class="nav-item h5 mx-2"><a href="./dashboard.php" class="nav-link text-white"><i 
+          class="bi bi-controller mx-2"></i>Productos</a></li>
+        <li class="nav-item h5 mx-2"><a href="./users.php" class="nav-link text-white"><i
+              class="bi bi-people mx-2"></i>Usuario</a></li> 
+              <li class="nav-item h5 mx-2"><a href="./shopping.php" class="nav-link text-white"><i
+                class="bi bi-box mx-2"></i>Pedidos</a></li>
+            <li class="nav-item h5 mx-2"><a href="./proveedor.php" class="nav-link text-white"><i 
+              class="bi bi-person-lines-fill mx-2"></i>Proveedores</a></li>  
+                
               
               
       </ul>
@@ -86,7 +85,7 @@
   
       
       <div class="mx-4 d-flex justify-content-between">
-        <h1 class="h4">Ventas</h1>
+        <h1 class="h4">Productos</h1>
         <div>
           <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdd">Agregar</button>
         </div>
@@ -138,6 +137,61 @@
       </section>
     </main>
   </div>
+  <div class="modal fade modal-lg" id="modalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar usuario</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="./php/user_insert.php" method="post" class="needs-validation" novalidate id="form">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-6 mb-2">
+                <label for="">Nombre del producto:</label>
+                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta el nombre">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+              <div class="col-6 mb-2">
+                <label for="">Precio:</label>
+                <input name="txtLast" required min="1" type="number" class="form-control" placeholder="Inserta el precio">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-2">
+                <label for="">Descripcion:</label>
+                <input name="txtAge" required min="1" type="text" class="form-control" placeholder="Descripcion...">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <label for="">Imagen:</label>
+                <input name="txtAge" required min="1" type="file" class="form-control" placeholder="">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+              <div class="col- mb-2">
+                <label for="">Categoria:</label>
+                <input name="txtPeso" required  type="text" class="form-control" placeholder="Inserta el tipo de control">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-dark" id="btnSave">Guardar</button>
+            </div>
+        </form>
+        
+        </div>
+      </div>
+    </div>
 
   
 
@@ -153,4 +207,4 @@
 </body>
 </body>
 
-</html>-->
+</html>

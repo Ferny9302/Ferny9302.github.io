@@ -26,18 +26,17 @@
         Control
       </h2>
       <ul class="nav flex-column">
-        <li class="nav-item h5 mx-2"><a href="./control.html" class="nav-link text-white"><i
+        <li class="nav-item h5 mx-2"><a href="./control.php" class="nav-link text-white"><i
               class="bi bi-house mx-2"></i>Inicio</a></li>
-       <!-- <li class="nav-item h5 mx-2"><a href="./dashboard.html" class="nav-link text-white"><i 
-            class="bi bi-cash mx-2"></i>Sales</a></li> sidebbar-->
-        <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i
+        <li class="nav-item h5 mx-2"><a href="./dashboard.php" class="nav-link text-white"><i 
+        class="bi bi-controller mx-2"></i>Productos</a></li> 
+        <li class="nav-item h5 mx-2"><a href="./users.php" class="nav-link text-white"><i
               class="bi bi-people mx-2"></i>Usuario</a></li>
-        <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i
+        <li class="nav-item h5 mx-2"><a href="./shopping.php" class="nav-link text-white"><i
             class="bi bi-box mx-2"></i>Pedidos</a></li>
-        <li class="nav-item h5 mx-2"><a href="./proveedor.html" class="nav-link text-white"><i
-        class="bi bi-boxes mx-2"></i>Proveedores</a></li>   
-         <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i
-            class="bi bi-boxes mx-2"></i>Inventario</a></li>            
+        <li class="nav-item h5 mx-2"><a href="./proveedor.php" class="nav-link text-white"><i 
+        class="bi bi-person-lines-fill mx-2"></i>Proveedores</a></li>   
+                
       </ul>
     </aside>
     <!--end sidebbar-->
@@ -166,26 +165,6 @@
               <div class="col-6 mb-2">
                 <label for="">Apellido:</label>
                 <input name="txtLast" required type="text" class="form-control" placeholder="Inserta el Apellido">
-                <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">Datos no validos</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4 mb-2">
-                <label for="">Edad:</label>
-                <input name="txtAge" required min="1" type="number" class="form-control" placeholder="Inserta la edad">
-                <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">Datos no validos</div>
-              </div>
-              <div class="col-4 mb-2">
-                <label for="">Peso:</label>
-                <input name="txtPeso" required min="1" type="number" class="form-control" placeholder="Inserta el peso">
-                <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">Datos no validos</div>
-              </div>
-              <div class="col-4 mb-2">
-                <label for="">Estatura(cm):</label>
-                <input name="txtEs" required min="1" type="number" class="form-control" placeholder="Inserta la estatura">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>

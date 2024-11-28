@@ -12,14 +12,38 @@ level tinyint,
 primary key (id)
 )
 
+create table categorias(
+id INTEGER not null auto_increment,
+nombre varchar (30),
+img varchar (30),
+primary key (id)
+)
+
+create table productos (
+id INTEGER not null auto_increment,
+nombre char (25),
+precio DECIMAL,
+descripcion varchar (50),
+img varchar (40),
+id_categorias INTEGER,
+primary key (id)
+)
+
 create table proveedores(
-id_proveedor INTEGER not null auto_increment,
+id INTEGER not null auto_increment,
 nombre varchar (25),
 telefono varchar (20),
 producto varchar (40)
 primary key (id)
 )
 
+create table pedidos(
+id INTEGER not null auto_increment,
+cantidad int,
+total decimal,
+id_usuarios INTEGER,
+primary key (id)
+)
 
 select * from users
 

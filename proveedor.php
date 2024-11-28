@@ -20,18 +20,17 @@
         Control
       </h2>
       <ul class="nav flex-column">
-        <li class="nav-item h5 mx-2"><a href="./control.html" class="nav-link text-white"><i
+        <li class="nav-item h5 mx-2"><a href="./control.php" class="nav-link text-white"><i
           class="bi bi-house mx-2"></i>Inicio</a></li>
-    <!-- <li class="nav-item h5 mx-2"><a href="./dashboard.html" class="nav-link text-white"><i 
-        class="bi bi-cash mx-2"></i>Sales</a></li> -->
-    <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i
+     <li class="nav-item h5 mx-2"><a href="./dashboard.php" class="nav-link text-white"><i 
+        class="bi bi-controller mx-2"></i>Productos</a></li> 
+    <li class="nav-item h5 mx-2"><a href="./users.php" class="nav-link text-white"><i
           class="bi bi-people mx-2"></i>Usuario</a></li>
-    <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i
+    <li class="nav-item h5 mx-2"><a href="./shopping.php" class="nav-link text-white"><i
         class="bi bi-box mx-2"></i>Pedidos</a></li>
-         <li class="nav-item h5 mx-2"><a href="./proveedor.html" class="nav-link text-white"><i
-        class="bi bi-boxes mx-2"></i>Proveedores</a></li>  
-     <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i
-        class="bi bi-boxes mx-2"></i>Inventario </a></li>  
+         <li class="nav-item h5 mx-2"><a href="./proveedor.php" class="nav-link text-white">
+          <i class="bi bi-person-lines-fill mx-2"></i>Proveedores</a></li>  
+    
                      
       </ul>
     </aside>
@@ -99,6 +98,8 @@
               <th scope="col">Nombre</th>
               <th scope="col">Telefono</th>
               <th scope="col">Producto</th>
+              <th scope="col">Fecha del pedido</th>
+              <th scope="col">Pago</th>
             </tr>
           </thead>
           <tbody>
@@ -107,6 +108,8 @@
               <td>bryan</td>
               <td>636-128-4704</td>
               <td>Gamcube controler</td>
+              <td>22/11/2024</td>
+              <td>$5000.00</td>
               <td class="text-end">
                 <button class="btn btn-outline-danger btn-sm">
                   <i class="bi bi-trash2"></i>
@@ -136,25 +139,38 @@
         <form action="./php/user_insert.php" method="post" class="needs-validation" novalidate id="form">
           <div class="modal-body">
             <div class="row">
+              <div class="col-6 mb-2">
+                <label for="">Nombre del proveedor:</label>
+                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta el nombre">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+            
+              <div class="col-6 mb-2">
+                <label for="">Telefono:</label>
+                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta el telefono">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+              </div>
+            <div class="row">
               <div class="col-12 mb-2">
-                <label for="">Tipo de control:</label>
-                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta el control">
+                <label for="">Producto:</label>
+                <input name="txtEmail" required type="text" class="form-control" placeholder="Inserte el producto">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 mb-2">
-                <label for="">Cantidad:</label>
-                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta la cantidad">
+              <div class="col-6 mb-2">
+                <label for="">Fecha del pedido:</label>
+                <input name="txtEmail" required type="date" class="form-control" placeholder="Inserte la fecha">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 mb-2">
-                <label for="">Fecha de llegada:</label>
-                <input name="txtEmail" required type="date" class="form-control" placeholder="Inserte email">
+              <div class="col-6 mb-2">
+                <label for="">Pago:</label>
+                <input name="txtEmail" required min="1" type="number" class="form-control" placeholder="Inserte el pago">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>

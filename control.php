@@ -24,12 +24,12 @@ if(isset($_SESSION['userdata'])){
                 Control
             </h2>
             <ul class="nav flex-column">
-              <li class="nav-item h5 mx-2"><a href="./control.html" class="nav-link text-white"><i class="bi bi-house mx-2"></i>Inicio</a></li>
-             <!-- <li class="nav-item h5 mx-2"><a href="./dashboard.html" class="nav-link text-white"><i class="bi bi-cash mx-2"></i>Sales</a></li>-->
-              <li class="nav-item h5 mx-2"><a href="./users.html" class="nav-link text-white"><i class="bi bi-people mx-2"></i>Usuario</a></li>
-              <li class="nav-item h5 mx-2"><a href="./shopping.html" class="nav-link text-white"><i class="bi bi-box mx-2"></i>Pedidos</a></li>
-              <li class="nav-item h5 mx-2"><a href="./proveedor.html" class="nav-link text-white"><i class="bi bi-box mx-2"></i>Proveedores</a></li>
-              <li class="nav-item h5 mx-2"><a href="./payment.html" class="nav-link text-white"><i class="bi bi-boxes mx-2"></i>Inventario</a></li>
+              <li class="nav-item h5 mx-2"><a href="./control.php" class="nav-link text-white"><i class="bi bi-house mx-2"></i>Inicio</a></li>
+              <li class="nav-item h5 mx-2"><a href="./dashboard.php" class="nav-link text-white"><i class="bi bi-controller mx-2"></i>Productos</a></li>
+              <li class="nav-item h5 mx-2"><a href="./users.php" class="nav-link text-white"><i class="bi bi-people mx-2"></i>Usuario</a></li>
+              <li class="nav-item h5 mx-2"><a href="./shopping.php" class="nav-link text-white"><i class="bi bi-box mx-2"></i>Pedidos</a></li>
+              <li class="nav-item h5 mx-2"><a href="./proveedor.php" class="nav-link text-white"><i class="bi bi-person-lines-fill mx-2"></i>Proveedores</a></li>
+              
               
             </ul>
         </aside>
