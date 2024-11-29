@@ -1,5 +1,12 @@
+<?php session_start();
+if(isset($_SESSION['userdata'])){
+  $user=$_SESSION['userdata'];
+} else{
+  header("Location: ./login.php");
+}
+?>
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -15,73 +22,11 @@
 <body>
   <div class="d-flex">
     
-    <aside class="bg-dark text-white vh-100" style="width: 20%;">
-      <h2 class="p-4 h4">
-        <img width="50px" src="" alt="" class="mx-1">
-        Control
-      </h2>
-      <ul class="nav flex-column">
-        <li class="nav-item h5 mx-2"><a href="./control.php" class="nav-link text-white"><i
-              class="bi bi-house mx-2"></i>Inicio</a></li>
-        <li class="nav-item h5 mx-2"><a href="./dashboard.php" class="nav-link text-white"><i 
-          class="bi bi-controller mx-2"></i>Productos</a></li>
-        <li class="nav-item h5 mx-2"><a href="./users.php" class="nav-link text-white"><i
-              class="bi bi-people mx-2"></i>Usuario</a></li> 
-              <li class="nav-item h5 mx-2"><a href="./shopping.php" class="nav-link text-white"><i
-                class="bi bi-box mx-2"></i>Pedidos</a></li>
-            <li class="nav-item h5 mx-2"><a href="./proveedor.php" class="nav-link text-white"><i 
-              class="bi bi-person-lines-fill mx-2"></i>Proveedores</a></li>  
-                
-              
-              
-      </ul>
-    </aside>
+    <?php include "./layouts/aside.php" ?>
     
     <main class="flex-grow-1">
       
-      <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-4">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">PlayCode</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-4">
-                  <button type="button" class="btn btn-light position-relative">
-                    <i class="bi bi-bell"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      40
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
-                </li>
-                <li class="nav-item">
-
-                  <img src="./img/perfil_dashborad.webp"
-                    style="width: 30px;border-radius: 50%;border: 1px solid rgb(13, 106, 13);">
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Bryan Palma
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i>&nbsp;Perfil</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="./login.html"><i class="bi bi-box-arrow-left"></i>&nbsp;Log Out</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <?php include "./layouts/header.php" ?>
   
       
       <div class="mx-4 d-flex justify-content-between">
@@ -144,18 +89,18 @@
           <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar usuario</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="./php/user_insert.php" method="post" class="needs-validation" novalidate id="form">
+        <form action="./php/product-add.php" enctype="multipart/form-data" method="post" class="needs-validation" novalidate id="form">
           <div class="modal-body">
             <div class="row">
               <div class="col-6 mb-2">
                 <label for="">Nombre del producto:</label>
-                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta el nombre">
+                <input name="txtName1" id="" required type="text" class="form-control" placeholder="Inserta el nombre">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
               <div class="col-6 mb-2">
                 <label for="">Precio:</label>
-                <input name="txtLast" required min="1" type="number" class="form-control" placeholder="Inserta el precio">
+                <input name="txtPrecio" required min="1" type="number" class="form-control" placeholder="Inserta el precio">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
@@ -163,7 +108,7 @@
             <div class="row">
               <div class="col-12 mb-2">
                 <label for="">Descripcion:</label>
-                <input name="txtAge" required min="1" type="text" class="form-control" placeholder="Descripcion...">
+                <input name="txtDes" required min="1" type="text" class="form-control" placeholder="Descripcion...">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
@@ -171,13 +116,13 @@
             <div class="row">
               <div class="col-6 mb-2">
                 <label for="">Imagen:</label>
-                <input name="txtAge" required min="1" type="file" class="form-control" placeholder="">
+                <input name="txtFile" required type="file" class="form-control" placeholder="">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
-              <div class="col- mb-2">
+              <div class="col-6 mb-2">
                 <label for="">Categoria:</label>
-                <input name="txtPeso" required  type="text" class="form-control" placeholder="Inserta el tipo de control">
+                <input name="txtCat" required  type="text" class="form-control" placeholder="Inserta el tipo de control">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
@@ -185,7 +130,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-dark" id="btnSave">Guardar</button>
+              <button type="submit" class="btn btn-dark" id="btnSave2">Guardar</button>
             </div>
         </form>
         

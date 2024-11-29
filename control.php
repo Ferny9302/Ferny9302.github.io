@@ -18,61 +18,12 @@ if(isset($_SESSION['userdata'])){
 <body>
     <div class="d-flex"> 
         <!--sidebbar-->
-        <aside class="bg-dark text-white vh-100" style="width: 20%;">
-            <h2 class="p-4 h4">
-                <img width="50px" src="./img/nogordas-removebg-preview.png" alt="" class="mx-1">
-                Control
-            </h2>
-            <ul class="nav flex-column">
-              <li class="nav-item h5 mx-2"><a href="./control.php" class="nav-link text-white"><i class="bi bi-house mx-2"></i>Inicio</a></li>
-              <li class="nav-item h5 mx-2"><a href="./dashboard.php" class="nav-link text-white"><i class="bi bi-controller mx-2"></i>Productos</a></li>
-              <li class="nav-item h5 mx-2"><a href="./users.php" class="nav-link text-white"><i class="bi bi-people mx-2"></i>Usuario</a></li>
-              <li class="nav-item h5 mx-2"><a href="./shopping.php" class="nav-link text-white"><i class="bi bi-box mx-2"></i>Pedidos</a></li>
-              <li class="nav-item h5 mx-2"><a href="./proveedor.php" class="nav-link text-white"><i class="bi bi-person-lines-fill mx-2"></i>Proveedores</a></li>
-              
-              
-            </ul>
-        </aside>
+        <?php include "./layouts/aside.php" ?>
         <!--end sidebbar-->
 
         <main class="flex-grow-1">
             <!--hedear-->
-            <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">PlayCode</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-4">
-                <button type="button" class="btn btn-light position-relative">
-                  <i class="bi bi-bell"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  40
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button></li>
-              <li class="nav-item">
-                
-                <img src="./img/perfil_dashborad.webp" style="width: 30px;border-radius: 50%;border: 1px solid rgb(13, 106, 13);">
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <?php echo $user['nombre'] ?>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i>&nbsp;Perfil</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./login.php"><i class="bi bi-box-arrow-left"></i>&nbsp;Log Out</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-            </header>
+            <?php include "./layouts/header.php" ?>
             <!--end hedear-->
             <!--Row stats-->
             <div class="row mx-4 px-4 my-4">
