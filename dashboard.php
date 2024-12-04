@@ -116,14 +116,18 @@ if(isset($_SESSION['userdata'])){
             <div class="row">
               <div class="col-6 mb-2">
                 <label for="">Imagen:</label>
-                <input name="txtFile" required type="file" class="form-control" placeholder="">
+                <input accept="image/*" name="txtFile" required type="file" class="form-control" placeholder="">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
               <div class="col-6 mb-2">
                 <label for="">Categoria:</label>
-                <input name="txtCat" required  type="text" class="form-control" placeholder="Inserta el tipo de control">
-                <div class="valid-feedback">Correcto</div>
+                <select name="txtCat" class="form-control" id="">
+                  <?php   
+                
+                  ?>
+
+                </select>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
             </div>
