@@ -76,7 +76,12 @@ if(isset($_SESSION['userdata'])){
                       <button class="btn btn-outline-danger btn-sm">
                         <i class="bi bi-trash2"></i>
                       </button>
-                      <button class="btn btn-outline-warning btn-sm mx-2">
+                      <button class="btn btn-outline-warning btn-sm mx-2 btnEdit" 
+                      data-email="<?php echo $fila['email'];?>"
+                      data-nombre="<?php echo $fila['nombre'];?>"
+                      data-apellido="<?php echo $fila['ap'];?>"
+                      data-id="<?php echo $fila['id'];?>"
+                      data-bs-toggle="modal" data-bs-target="#modalEdit">
                         <i class="bi bi-pen"></i>
                       </button>
                       <button class="btn btn-outline-dark btn-sm">
@@ -146,7 +151,51 @@ if(isset($_SESSION['userdata'])){
         
         </div>
       </div>
-    </div>
+  </div>
+  <!-- Modal EDIT -->
+  <div class="modal fade modal-lg" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar usuario</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="./php/user_update.php" method="post" class="needs-validation" novalidate id="formEdit">
+          <div class="modal-body">
+            <input type="hidden" id="txtIdEdit" name="txtId">
+            <div class="row">
+              <div class="col-6 mb-2">
+                <label for="">Nombre:</label>
+                <input name="txtName" id="txtNombreEdit" required type="text" class="form-control" placeholder="Inserta el nombre">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+              <div class="col-6 mb-2">
+                <label for="">Apellido:</label>
+                <input id="txtApEdit" name="txtLast" required type="text" class="form-control" placeholder="Inserta el Apellido">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-2">
+                <label for="">Email</label>
+                <input id="txtEmailEdit" name="txtEmail" required type="email" class="form-control" placeholder="Inserte email">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-dark" id="btnEdit">Guardar</button>
+            </div>
+        </form>
+        
+        </div>
+      </div>
+  </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -154,6 +203,33 @@ if(isset($_SESSION['userdata'])){
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="./js/users.js"></script>
+
+    <?php  
+      if(isset($_GET['status'])){
+        if($_GET['status']==1){
+    ?> 
+          <script>
+            const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 2500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Datos guardados"
+      });
+          </script>
+
+    <?php
+        }
+      }
+    ?>
 
 
 </body>
