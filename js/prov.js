@@ -23,13 +23,17 @@ var botones=document.getElementsByClassName("btnEdit")
 for(var i=0;i<botones.length;i++){
 botones[i].onclick=(evt)=>{
     var btn = evt.target
-    var email = btn.getAttribute("data-email")
     var nombre = btn.getAttribute("data-nombre")
-    var apellido = btn.getAttribute("data-apellido")
+    var telefono = btn.getAttribute("data-telefono")
+    var producto = btn.getAttribute("data-producto")
+    var fecha = btn.getAttribute("data-fecha")
+    var pago = btn.getAttribute("data-pago")
     var id = btn.getAttribute("data-id")
-    document.getElementById("txtEmailEdit").value = email
-    document.getElementById("txtNombreEdit").value = nombre
-    document.getElementById("txtApEdit").value = apellido
+    document.getElementById("txtProvEdit").value = nombre
+    document.getElementById("txtTelefonoEdit").value = telefono
+    document.getElementById("txtProductEdit").value = producto
+    document.getElementById("txtDateEdit").value = fecha
+    document.getElementById("txtPagoEdit").value = pago
     document.getElementById("txtIdEdit").value = id
   }
 }

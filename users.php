@@ -136,8 +136,8 @@ if(isset($_SESSION['userdata'])){
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
               <div class="col-6 mb-2">
-                <label for="">Confirmar password</label>
-                <input name="txtPass2" required type="password" class="form-control" placeholder="Ingrese su password">
+                <label for="">confirmar contraseña</label>
+                <input name="txtPass" required type="password" class="form-control" placeholder="Ingrese su contra">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>

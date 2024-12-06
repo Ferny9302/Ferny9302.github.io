@@ -124,10 +124,14 @@ if(isset($_SESSION['userdata'])){
                 <label for="">Categoria:</label>
                 <select name="txtCat" class="form-control" id="">
                   <?php   
-                
+                    while($fila2=mysqli_fetch_array($res_cate)){
                   ?>
-
+                    <option value="<?php echo $fila2['id']?>">
+                        <?php echo $fila2['nombre']?>
+                    </option>
+                    <?php } ?>
                 </select>
+                <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
             </div>
