@@ -59,6 +59,8 @@ insert into users (nombre,ap,email,password,level)
 values ('bryan','palma','palma@hotmail.com','123',1);
 insert into users (nombre,ap,email,password,level) 
 values ('fer','palma','fer@hotmail.com','1234',2);
+insert into users (nombre,ap,email,password,level) 
+values ('joselin','cera','joselin@hotmail.com','123',1);
 
 select * from users order by id desc
 

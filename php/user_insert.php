@@ -17,7 +17,7 @@
 
 
 
-    $con = "insert into users values (0,'$name','$ap','$email','$pass',2);";
+    $con = "insert into users values (0,'$name','$ap','$email','$pass',1);";
 
     
     $conexion->query($con) or die($conexion->error);
