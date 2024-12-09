@@ -85,3 +85,5 @@ select * from proveedores;
 
 insert into proveedores  (nombre,telefono,producto,fecha_pedido,pago) 
 values ('bryan','636-128-4704','Gammecube controller','2024/11/22',5000.00);
+
+

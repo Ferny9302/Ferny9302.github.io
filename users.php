@@ -73,9 +73,13 @@ if(isset($_SESSION['userdata'])){
                       }
                     ?></td>
                     <td class="text-end">
-                      <button class="btn btn-outline-danger btn-sm">
+                      <form action="./php/delete_user.php" method="post" style="display:inline">
+                      <input type="hidden" name="id" value="<?php echo $fila['id']?>">
+                      <button class="btn btn-outline-danger btn-sm" onclick="return confirm('¿Estas seguro?')">
+                        
                         <i class="bi bi-trash2"></i>
                       </button>
+                      </form>
                       <button class="btn btn-outline-warning btn-sm mx-2 btnEdit" 
                       data-email="<?php echo $fila['email'];?>"
                       data-nombre="<?php echo $fila['nombre'];?>"

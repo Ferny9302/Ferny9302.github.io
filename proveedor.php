@@ -65,9 +65,13 @@ if(isset($_SESSION['userdata'])){
               <td><?php echo $fila['fecha_pedido']?></td>
               <td><?php echo $fila['pago']?></td>
               <td class="text-end">
-                <button class="btn btn-outline-danger btn-sm">
-                  <i class="bi bi-trash2"></i>
-                </button>
+              <form action="./php/delete_prov.php" method="post" style="display:inline">
+                      <input type="hidden" name="id" value="<?php echo $fila['id']?>">
+                      <button class="btn btn-outline-danger btn-sm" onclick="return confirm('¿Estas seguro?')">
+                        
+                        <i class="bi bi-trash2"></i>
+                      </button>
+                      </form>
                 <button class="btn btn-outline-warning btn-sm mx-2 btnEdit" 
                       data-telefono="<?php echo $fila['telefono'];?>"
                       data-nombre="<?php echo $fila['nombre'];?>"
