@@ -65,7 +65,7 @@ if(isset($_SESSION['userdata'])){
               <td><?php echo $fila['fecha_pedido']?></td>
               <td><?php echo $fila['pago']?></td>
               <td class="text-end">
-              <form action="./php/delete_prov.php" method="post" style="display:inline">
+              <form action="./php/delete._prov.php" method="post" style="display:inline">
                       <input type="hidden" name="id" value="<?php echo $fila['id']?>">
                       <button class="btn btn-outline-danger btn-sm" onclick="return confirm('¿Estas seguro?')">
                         
@@ -102,7 +102,7 @@ if(isset($_SESSION['userdata'])){
           <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar proveedor</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="./php/user_insert.php" method="post" class="needs-validation" novalidate id="form">
+        <form action="./php/prov_insert.php" method="post" class="needs-validation" novalidate id="form">
           <div class="modal-body">
             <div class="row">
               <div class="col-6 mb-2">
@@ -114,7 +114,7 @@ if(isset($_SESSION['userdata'])){
             
               <div class="col-6 mb-2">
                 <label for="">Telefono:</label>
-                <input name="txtName" id="" required type="text" class="form-control" placeholder="Inserta el telefono">
+                <input name="txtTel" id="" required type="text" class="form-control" placeholder="Inserta el telefono">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
@@ -122,7 +122,7 @@ if(isset($_SESSION['userdata'])){
             <div class="row">
               <div class="col-12 mb-2">
                 <label for="">Producto:</label>
-                <input name="txtEmail" required type="text" class="form-control" placeholder="Inserte el producto">
+                <input name="txtPro" required type="text" class="form-control" placeholder="Inserte el producto">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
@@ -130,13 +130,13 @@ if(isset($_SESSION['userdata'])){
             <div class="row">
               <div class="col-6 mb-2">
                 <label for="">Fecha del pedido:</label>
-                <input name="txtEmail" required type="date" class="form-control" placeholder="Inserte la fecha">
+                <input name="txtFe" required type="date" class="form-control" placeholder="Inserte la fecha">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
               <div class="col-6 mb-2">
                 <label for="">Pago:</label>
-                <input name="txtEmail" required min="1" type="number" class="form-control" placeholder="Inserte el pago">
+                <input name="txtPa" required min="1" type="number" class="form-control" placeholder="Inserte el pago">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
