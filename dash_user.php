@@ -4,9 +4,6 @@ if(isset($_SESSION['userdata'])){
 } else{
   header("Location: ./login.php");
 }
-include "./php/conexion.php";
-$sql="select * from categorias";
-$res_cate = $conexion->query($sql) or die($conexion->error);
 ?>
 
 <!DOCTYPE html>
@@ -25,15 +22,15 @@ $res_cate = $conexion->query($sql) or die($conexion->error);
 <body>
   <div class="d-flex">
     
-    <?php include "./layouts/aside.php" ?>
+    <?php include "./layouts/aside_user.php" ?>
     
     <main class="flex-grow-1">
       
-      <?php include "./layouts/header.php" ?>
+      <?php include "./layouts/header_user.php" ?>
   
       
       <div class="mx-4 d-flex justify-content-between">
-        <h1 class="h4">Productos</h1>
+        <h1 class="h4">Gamecube</h1>
         <div>
           <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdd">Agregar</button>
         </div>
@@ -46,7 +43,7 @@ $res_cate = $conexion->query($sql) or die($conexion->error);
                     <img src="./img2/Control1.svg" height="200px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control original</h5>
-                      <p class="card-text">Controles originales de gamecube, aptos para diversas consolas de videojuegos y durables</p>
+                      <p class="card-text">Controles originales de gamecube, aptos para diversas consolas de videojuegos</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
@@ -76,7 +73,7 @@ $res_cate = $conexion->query($sql) or die($conexion->error);
                     <img src="./img2/control16.svg" height="200px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control generico</h5>
-                      <p class="card-text">Control generico, mas baratos y funcionales con garantia de 3 meses, funcionan en diferentes consolas</p>
+                      <p class="card-text">Control generico, mas baratos y funcionales con garantia de 3 meses</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
@@ -126,13 +123,6 @@ $res_cate = $conexion->query($sql) or die($conexion->error);
               <div class="col-6 mb-2">
                 <label for="">Categoria:</label>
                 <select name="txtCat" class="form-control" id="">
-                  <?php   
-                    while($fila2=mysqli_fetch_array($res_cate)){
-                  ?>
-                    <option value="<?php echo $fila2['id']?>">
-                        <?php echo $fila2['nombre']?>
-                    </option>
-                    <?php } ?>
                 </select>
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>

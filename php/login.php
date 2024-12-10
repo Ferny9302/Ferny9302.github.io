@@ -27,7 +27,7 @@
         if($fila[5] ==1){
             header("Location: ../control.php");
         }else{
-            header("Location: ../index.html");
+            header("Location: ../dash_user.php");
         }
 
     }else{

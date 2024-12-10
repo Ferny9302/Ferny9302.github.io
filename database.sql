@@ -69,6 +69,10 @@ values (0,'rol',250.00,'desripcion','control3.png',1)
 
 insert into categorias
 values (0,'gamcube control','control1.jpg')
+insert into categorias
+values (0,'switch control','control1.jpg')
+insert into categorias
+values (0,'pro control','control1.jpg')
 
 update proveedores set 
 nombre='fernando',
@@ -86,4 +90,4 @@ select * from proveedores;
 insert into proveedores  (nombre,telefono,producto,fecha_pedido,pago) 
 values ('bryan','636-128-4704','Gammecube controller','2024/11/22',5000.00);
 
-
+select * from users

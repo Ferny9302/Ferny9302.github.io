@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg px-4 py-4" style="background-color: #90b2f5;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Administracion</a>
+          <a class="navbar-brand" href="#">Usuario</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
