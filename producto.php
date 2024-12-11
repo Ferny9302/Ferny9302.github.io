@@ -1,12 +1,13 @@
-<?php session_start();
+<?php    session_start();
 if(isset($_SESSION['userdata'])){
   $user=$_SESSION['userdata'];
 } else{
   header("Location: ./login.php");
 }
 include "./php/conexion.php";
-$sql="select * from productos";
+$sql="select * from productos where id =".$_GET['id'];
 $res= $conexion->query($sql) or die($conexion->error);
+$fila=mysqli_fetch_row($res);
 ?>
 
 <!DOCTYPE html>
@@ -35,26 +36,22 @@ $res= $conexion->query($sql) or die($conexion->error);
       <div class="mx-4 d-flex justify-content-between">
         <h1 class="h4">Gamecube</h1>
         <div>
-          
+          <a href="./dash_user.php" class="btn btn-dark"></a>
         </div>
       </div>
       
-      <section class="p-4 container">
+      <section class="p-6 container">
         <div class="row">
-          <?php  while($fila=mysqli_fetch_array($res)){ ?>
-            <div class="col-3 mt-2 p-2">
-                <div class="card">
-                    <img src="./img2/<?php echo $fila['img']; ?>" height="200px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><?php echo $fila['nombre']; ?></h5>
-                      <p class="card-text"><?php echo $fila['descripcion']; ?></p>
-                      <a href="./producto.php?id=<?php echo $fila['id']; ?>" class="btn btn-dark w-100">Ver control</a>
-                    </div>
-                  </div>
+          <div class="col-5 mt-2 p-2">
+            <img src="./img2/<?php echo $fila[4]; ?>" height="600px" class="card-img-top" alt="...">
+            </div>
+            <div class="col-7">
+                    <h1 class="card-title p-4"><?php echo $fila[1]; ?></h1>
+                    <p class="card-text p-5"><?php echo $fila[3]; ?></p>
+                    <h2 class="card-title p-4"><?php echo $fila[2]; ?></h2>
+            </div>
         </div>
-          <?php 
-          }
-          ?>
+          
            
             
         

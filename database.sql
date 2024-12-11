@@ -29,6 +29,7 @@ precio DECIMAL,
 descripcion varchar (50),
 img varchar (40),
 id_categorias int,
+cantidad varchar(5),
 primary key (id)
 )
 
@@ -65,7 +66,16 @@ values ('joselin','cera','joselin@hotmail.com','123',1);
 select * from users order by id desc
 
 insert into productos 
-values (0,'rol',250.00,'desripcion','control3.png',1)
+values (0,'gamecube original',250.00,'asdasda','control1.svg',1);
+insert into productos 
+values (0,'gamecube especial',1500.00,'jdajsd','contro16.svg',1);
+insert into productos 
+values (0,'gamecube bluetooht',1000.00,'qwdqw','control19.svg',1);
+insert into productos 
+values (0,'gamecube especial',1500.00,'jdajsd','control16.svg',1);
+
+delete from productos where id = 1;
+select * from productos;
 
 insert into categorias
 values (0,'gamcube control','control1.jpg')
@@ -91,3 +101,29 @@ insert into proveedores  (nombre,telefono,producto,fecha_pedido,pago)
 values ('bryan','636-128-4704','Gammecube controller','2024/11/22',5000.00);
 
 select * from users
+
+DELIMITER //
+
+CREATE TRIGGER after_insert_producto
+AFTER INSERT ON productos
+FOR EACH ROW
+BEGIN
+    
+    INSERT INTO auditoria_productos (id_producto, accion, fecha)
+    VALUES (NEW.id, 'INSERT', NOW());
+END //
+
+DELIMITER ;
+
+
+CREATE TABLE auditoria_productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_producto INT,
+    accion VARCHAR(50),
+    fecha DATETIME
+);
+
+
+
+select * from auditoria_productos;
+
