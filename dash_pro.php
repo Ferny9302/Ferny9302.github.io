@@ -32,7 +32,7 @@ if(isset($_SESSION['userdata'])){
       <div class="mx-4 d-flex justify-content-between">
         <h1 class="h4">Pro</h1>
         <div>
-          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdd">Agregar</button>
+          
         </div>
       </div>
       
@@ -40,40 +40,40 @@ if(isset($_SESSION['userdata'])){
         <div class="row">
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/Control1.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control pro 4.webp" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control pro</h5>
-                      <p class="card-text">Controles originales de gamecube, aptos para diversas consolas de videojuegos</p>
+                      <p class="card-text">Control pro de color negro original y usable</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
             </div>
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/control6.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control pro.webp" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control pro</h5>
-                      <p class="card-text">Controles de ediciones especiales, aptos para jugadores profesionales y excelente estado</p>
+                      <p class="card-text">Control pro edicion especial de zelda el juego</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
             </div>
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/control9.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control pro 2.webp" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control pro</h5>
-                      <p class="card-text">Contoles bluetooth, con cable de carga y optimos para diversas consolas de videojuegos</p>
+                      <p class="card-text">Contol pro personalizado con botones naranjas</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
             </div>
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/control16.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control pro 3.webp" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control pro</h5>
-                      <p class="card-text">Control generico, mas baratos y funcionales con garantia de 3 meses</p>
+                      <p class="card-text">Control pro edicion platoon el juego de color morado</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>

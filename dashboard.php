@@ -66,7 +66,7 @@ $res_cate = $conexion->query($sql) or die($conexion->error);
                     <img src="./img2/control9.svg" height="200px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control bluetooth</h5>
-                      <p class="card-text">Contoles bluetooth, con cable de carga y optimos para diversas consolas de videojuegos</p>
+                      <p class="card-text">Controles bluetooth, con cable de carga y optimos para diversas consolas de videojuegos</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
