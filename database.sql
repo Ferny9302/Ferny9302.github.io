@@ -26,10 +26,9 @@ create table productos (
 id INTEGER not null auto_increment,
 nombre char (25),
 precio DECIMAL,
-descripcion varchar (50),
+descripcion varchar (300),
 img varchar (40),
 id_categorias int,
-cantidad varchar(5),
 primary key (id)
 )
 
@@ -39,6 +38,7 @@ id INTEGER not null auto_increment,
 nombre varchar (25),
 telefono varchar (20),
 producto varchar (40),
+cantidad numeric,
 fecha_pedido date,
 pago decimal,
 primary key (id)
@@ -66,15 +66,15 @@ values ('joselin','cera','joselin@hotmail.com','123',1);
 select * from users order by id desc
 
 insert into productos 
-values (0,'gamecube original',250.00,'asdasda','control1.svg',1);
+values (0,'gamecube original',250.00,'Controles originales de gamecube, aptos para diversas consolas de videojuegos y durables','control1.svg',1);
 insert into productos 
-values (0,'gamecube especial',1500.00,'jdajsd','contro16.svg',1);
+values (0,'gamecube especial',1500.00,'Controles de ediciones especiales, aptos para jugadores profesionales y excelente estado','control6.svg',1);
 insert into productos 
-values (0,'gamecube bluetooht',1000.00,'qwdqw','control19.svg',1);
+values (0,'gamecube bluetooht',1000.00,'Controles bluetooth, con cable de carga y optimos para diversas consolas de videojuegos','control19.svg',1);
 insert into productos 
-values (0,'gamecube especial',1500.00,'jdajsd','control16.svg',1);
+values (0,'gamecube generico',1500.00,'Control generico, mas baratos y funcionales con garantia de 3 meses, funcionan en diferentes consola','control16.svg',1);
 
-delete from productos where id = 1;
+delete from productos where id = 2;
 select * from productos;
 
 insert into categorias
@@ -97,8 +97,8 @@ select * from categorias;
 
 select * from proveedores;
 
-insert into proveedores  (nombre,telefono,producto,fecha_pedido,pago) 
-values ('bryan','636-128-4704','Gammecube controller','2024/11/22',5000.00);
+insert into proveedores  (nombre,telefono,producto,cantidad,fecha_pedido,pago) 
+values ('bryan','636-128-4704','Gamecube controller',3,'2024/11/22',5000.00);
 
 select * from users
 
