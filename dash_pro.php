@@ -30,7 +30,7 @@ if(isset($_SESSION['userdata'])){
   
       
       <div class="mx-4 d-flex justify-content-between">
-        <h1 class="h4">Gamecube</h1>
+        <h1 class="h4">Pro</h1>
         <div>
           <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdd">Agregar</button>
         </div>

@@ -30,9 +30,9 @@ if(isset($_SESSION['userdata'])){
   
       
       <div class="mx-4 d-flex justify-content-between">
-        <h1 class="h4">Gamecube</h1>
+        <h1 class="h4">Switch</h1>
         <div>
-          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdd">Agregar</button>
+          
         </div>
       </div>
       
@@ -40,40 +40,40 @@ if(isset($_SESSION['userdata'])){
         <div class="row">
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/Control1.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control switch 4.png" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control switch</h5>
-                      <p class="card-text">Controles originales de gamecube, aptos para diversas consolas de videojuegos</p>
+                      <p class="card-text">Control original de switch, azul y naranja nuevos </p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
             </div>
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/control6.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control switch.jpg" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control switch</h5>
-                      <p class="card-text">Controles de ediciones especiales, aptos para jugadores profesionales y excelente estado</p>
+                      <p class="card-text">Control de color verde y azul para switch normal</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
             </div>
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/control9.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control switch 2.webp" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control switch</h5>
-                      <p class="card-text">Contoles bluetooth, con cable de carga y optimos para diversas consolas de videojuegos</p>
+                      <p class="card-text">Contol para el switch personalizados con gomas</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>
             </div>
             <div class="col-3 mt-2 p-2">
                 <div class="card">
-                    <img src="./img2/control16.svg" height="200px" class="card-img-top" alt="...">
+                    <img src="./img2/control switch 3.png" height="300px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Control switch</h5>
-                      <p class="card-text">Control generico, mas baratos y funcionales con garantia de 3 meses</p>
+                      <p class="card-text">Control negro para switch oled edicion especial</p>
                       <a href="#" class="btn btn-dark w-100">Ver control</a>
                     </div>
                   </div>

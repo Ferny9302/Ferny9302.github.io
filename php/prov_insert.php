@@ -6,6 +6,7 @@
     $name = $_POST['txtName'];
     $telefono = $_POST['txtTel'];
     $product = $_POST['txtPro'];
+    $cant = $_POST['txtCantidad'];
     $fe = $_POST['txtFe'];
     $pa = $_POST['txtPa'];
 
@@ -17,8 +18,8 @@
 
 
 
-    $con = "insert into proveedores  (nombre,telefono,producto,fecha_pedido,pago) 
-    values ('$name','$telefono','$product','$fe','$pa');";
+    $con = "insert into proveedores  (nombre,telefono,producto,cantidad,fecha_pedido,pago) 
+    values ('$name','$telefono','$product','$cant','$fe','$pa');";
 
     
     $conexion->query($con) or die($conexion->error);

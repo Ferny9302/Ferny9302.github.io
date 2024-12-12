@@ -3,6 +3,7 @@ include "./conexion.php";
     $name = $_POST['txtName'];
     $telefono = $_POST['txtTel'];
     $product = $_POST['txtProduct'];
+    $cant = $_POST['txtCantidad'];
     $fecha = $_POST['txtDate'];
     $pago = $_POST['txtPago'];
     $id = $_POST['txtId'];
@@ -11,6 +12,7 @@ include "./conexion.php";
     nombre='$name',
     telefono='$telefono',
     producto='$product',
+    cantidad='$cant',
     fecha_pedido='$fecha',
     pago='$pago'
     where id = $id;";

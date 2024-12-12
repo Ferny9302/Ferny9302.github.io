@@ -36,7 +36,7 @@ $fila=mysqli_fetch_row($res);
       <div class="mx-4 d-flex justify-content-between">
         <h1 class="h4">Gamecube</h1>
         <div>
-          <a href="./dash_user.php" class="btn btn-dark"></a>
+          <a href="./dash_user.php" class="btn btn-dark">Regresar</a>
         </div>
       </div>
       

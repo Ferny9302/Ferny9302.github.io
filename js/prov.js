@@ -26,12 +26,14 @@ botones[i].onclick=(evt)=>{
     var nombre = btn.getAttribute("data-nombre")
     var telefono = btn.getAttribute("data-telefono")
     var producto = btn.getAttribute("data-producto")
+    var cantidad = btn.getAttribute("data-cantidad")
     var fecha = btn.getAttribute("data-fecha")
     var pago = btn.getAttribute("data-pago")
     var id = btn.getAttribute("data-id")
     document.getElementById("txtProvEdit").value = nombre
     document.getElementById("txtTelefonoEdit").value = telefono
     document.getElementById("txtProductEdit").value = producto
+    document.getElementById("txtCantidadEdit").value = cantidad
     document.getElementById("txtDateEdit").value = fecha
     document.getElementById("txtPagoEdit").value = pago
     document.getElementById("txtIdEdit").value = id

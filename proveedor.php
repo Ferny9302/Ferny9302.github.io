@@ -49,6 +49,7 @@ if(isset($_SESSION['userdata'])){
               <th scope="col">Nombre</th>
               <th scope="col">Telefono</th>
               <th scope="col">Producto</th>
+              <th scope="col">Cantidad</th>
               <th scope="col">Fecha del pedido</th>
               <th scope="col">Pago</th>
             </tr>
@@ -62,6 +63,7 @@ if(isset($_SESSION['userdata'])){
               <td><?php echo $fila['nombre']?></td>
               <td><?php echo $fila['telefono']?></td>
               <td><?php echo $fila['producto']?></td>
+              <td><?php echo $fila['cantidad']?></td>
               <td><?php echo $fila['fecha_pedido']?></td>
               <td><?php echo $fila['pago']?></td>
               <td class="text-end">
@@ -76,6 +78,7 @@ if(isset($_SESSION['userdata'])){
                       data-telefono="<?php echo $fila['telefono'];?>"
                       data-nombre="<?php echo $fila['nombre'];?>"
                       data-producto="<?php echo $fila['producto'];?>"
+                      data-cantidad="<?php echo $fila['cantidad'];?>"
                       data-fecha="<?php echo $fila['fecha_pedido'];?>"
                       data-pago="<?php echo $fila['pago'];?>"
                       data-id="<?php echo $fila['id'];?>"
@@ -120,9 +123,15 @@ if(isset($_SESSION['userdata'])){
               </div>
               </div>
             <div class="row">
-              <div class="col-12 mb-2">
+              <div class="col-6 mb-2">
                 <label for="">Producto:</label>
                 <input name="txtPro" required type="text" class="form-control" placeholder="Inserte el producto">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+              <div class="col-6 mb-2">
+                <label for="">Cantidad:</label>
+                <input min="1" id="txtCantidadEdit" name="txtCantidad" required type="number" class="form-control" placeholder="Inserte la cantidad">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
@@ -178,9 +187,15 @@ if(isset($_SESSION['userdata'])){
               </div>
               </div>
             <div class="row">
-              <div class="col-12 mb-2">
+              <div class="col-6 mb-2">
                 <label for="">Producto:</label>
                 <input id="txtProductEdit" name="txtProduct" required type="text" class="form-control" placeholder="Inserte el producto">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Datos no validos</div>
+              </div>
+              <div class="col-6 mb-2">
+                <label for="">Cantidad:</label>
+                <input min="1" id="txtCantidadEdit" name="txtCantidad" required type="number" class="form-control" placeholder="Inserte la cantidad">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Datos no validos</div>
               </div>
